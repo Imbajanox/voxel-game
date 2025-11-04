@@ -1,0 +1,28 @@
+[package]
+name = "voxel-game"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Graphics and windowing
+wgpu = "0.19"
+winit = "0.29"
+pollster = "0.3"
+
+# Math library for 3D transformations
+glam = "0.25"
+
+# Noise generation for terrain
+noise = "0.8"
+
+# Utilities
+bytemuck = { version = "1.14", features = ["derive"] }
+env_logger = "0.11"
+
+[lib]
+name = "voxel_game"
+path = "src/lib.rs"
+
+[[bin]]
+name = "voxel-game"
+path = "src/main.rs"
