@@ -1,5 +1,5 @@
 /// Represents different types of blocks in the voxel world
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub enum BlockType {
     Air,
     Grass,
